@@ -2,6 +2,7 @@ body {
     background-color: black;
     background-image: url(../images/thumb-1920-1156096.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -18,7 +19,6 @@ header {
 }
 
 header h1 {
-    font-size: 60px;
     font-size: 5vw;
     text-align: center;
     color: rgb(0, 255, 0);
@@ -41,8 +41,9 @@ div {
     flex-direction: column;
     box-sizing: border-box;
     text-align: center;
-    margin: 10px auto;
-    width: 70%;
+    margin: 10px auto 0 auto;
+    height: 500px;
+    width: 60%;
     background-image: url(../images/Yarzxl.png);
     background-position: center;
     background-size: cover;
@@ -54,11 +55,13 @@ div h1 {
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     color: gold;
     font-size: 50px;
-    margin-top: 10px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid gold;
 }
 
 p {
-    margin: 50px 20px 100px 20px;
+    margin: 0 20px 100px 20px;
     color: gold;
     font-size: 25px;
 }
@@ -68,17 +71,9 @@ div p span {
     -webkit-text-stroke: 1px rgb(2, 172, 2);
 }
 
-hr {
-    width: 70%;
-    background-color: gold;
-    height: 5px;
-    border: 10px gold;
-}
-
 .button-size {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 button {
@@ -86,15 +81,96 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 300px;
-    height: 100px;
-    font-size: 40px;
-    color: gold;
+    width: 225px;
+    height: 75px;
+    font-size: 30px;
+    position: relative;
+    bottom: 50px;
+    color: lightgreen;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
-    border: 2px solid black;
+    border: 2px solid green;
 }
 
 button:hover {
-    color: purple;
+    color: yellow;
+    border: 2px solid gold;
     background-image: url(../images/791233.jpg);
+}
+
+@media only screen and (min-width: 986px) and (max-width: 1280px){
+    div {
+        height: 600px;
+    }
+    
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 985px){
+    body {
+        background-image: none;
+    }
+
+    div {
+        height: 700px;
+        width: auto;
+    }
+
+    div p {
+        font-size: 32px;
+    }
+
+}
+
+  
+@media only screen and (min-width:414px) and (max-width:767px) {
+    div{ 
+        height: 650px;
+        width: auto;
+    }
+
+    div p {
+        font-size: 22px;
+    }
+
+
+  
+}
+
+@media only screen and (min-width:375px) and (max-width: 413px) {
+    body {
+        background-image: none;
+    }
+    
+    header h1 {
+        font-size: 5vw;
+    }
+
+    div {
+        height: 700px;
+        width: auto;
+    }
+
+    div p {
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (min-width:280px) and (max-width: 374px) {
+    body {
+        background-image: none
+    }
+    header {
+        height: 50px;
+    }
+    div {
+        height: 700px;
+        width: auto;
+    }
+
+    div p {
+        font-size: 16px;
+    }
+
+
 }
