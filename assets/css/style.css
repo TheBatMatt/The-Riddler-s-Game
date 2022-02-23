@@ -7,7 +7,6 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     height: 100px;
     width: 100%;
@@ -37,8 +36,6 @@ header h1:hover {
 
 
 div {
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
     text-align: center;
     margin: 10px auto 0 auto;
@@ -101,8 +98,6 @@ button:hover {
     div {
         height: 600px;
     }
-    
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 985px){
@@ -118,7 +113,6 @@ button:hover {
     div p {
         font-size: 32px;
     }
-
 }
 
   
@@ -130,10 +124,7 @@ button:hover {
 
     div p {
         font-size: 22px;
-    }
-
-
-  
+    } 
 }
 
 @media only screen and (min-width:375px) and (max-width: 413px) {
@@ -171,6 +162,4 @@ button:hover {
     div p {
         font-size: 16px;
     }
-
-
 }
