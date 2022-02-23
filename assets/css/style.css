@@ -6,6 +6,7 @@ body {
 }
 
 header {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     height: 100px;
@@ -17,20 +18,17 @@ header {
     border: 3px solid black;
 }
 
-header h1 {
-    font-size: 5vw;
+header a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 6vw;
     text-align: center;
     color: rgb(0, 255, 0);
     -webkit-text-stroke: 2px black;
-    text-shadow: 3px 3px 3px black;
     margin: auto;
+    text-decoration: none;
 }
 
-a {
-    color: green;
-}
-
-header h1:hover {
+header a:hover {
     color: purple;
 }
 
@@ -117,7 +115,8 @@ button:hover {
 
   
 @media only screen and (min-width:414px) and (max-width:767px) {
-    div{ 
+
+    div { 
         height: 650px;
         width: auto;
     }
@@ -131,9 +130,13 @@ button:hover {
     body {
         background-image: none;
     }
-    
-    header h1 {
-        font-size: 5vw;
+
+    header {
+        height: 100px;
+    }
+
+    header a {
+        font-size: 32px;
     }
 
     div {
@@ -148,12 +151,19 @@ button:hover {
 }
 
 @media only screen and (min-width:280px) and (max-width: 374px) {
+    
     body {
         background-image: none
     }
+
     header {
         height: 50px;
     }
+
+    header a {
+        font-size: 25px;
+    }
+    
     div {
         height: 700px;
         width: auto;
