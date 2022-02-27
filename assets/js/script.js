@@ -171,7 +171,7 @@ function checkAnswers() {
     if (selectedAnswer.value === riddleMeThis[quizIndex-1].answer) {
         correctAnswers++
     } else {
-        timer -= 10;
+        timer -= 30;
     }
 
     console.log(correctAnswers);
@@ -269,7 +269,7 @@ function renderQuizQuestion(i) {
             quizAnswers.checked = true;
         }   
 
-        submitButton.style["margin-top"] = "145px";
+        submitButton.style["margin-top"] = "120px";
 
         quizOptions.appendChild(quizAnswers);
         quizOptions.appendChild(radioLabel);

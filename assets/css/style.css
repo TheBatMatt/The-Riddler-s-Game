@@ -44,7 +44,13 @@ header a:hover {
 .answers {
     color: goldenrod;
     -webkit-text-stroke: 1px goldenrod;
-    font-size: 30px;
+    font-size: 22px;
+}
+
+.answers input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 
