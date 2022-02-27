@@ -12,10 +12,9 @@ header {
     height: 100px;
     width: 100%;
     margin: 0;
-    background-image: url(../images/jjpOsNG.png);
+    background-image: url(../images/137-1373520_black-abstract-wallpaper-with-green-lines-data-src.jpg);
     background-size: cover;
-    background-color: black;
-    border: 3px solid black;
+    border: 3px solid green;
 }
 
 header a {
@@ -32,12 +31,28 @@ header a:hover {
     color: purple;
 }
 
+#time-left{
+    height: 20px;
+    width: 100px;
+    margin: 20px auto;
+    background-color: black;
+    border: 1px solid green;
+    color: green;
+    text-align: center;
+}
 
-div {
+.answers {
+    color: goldenrod;
+    -webkit-text-stroke: 1px goldenrod;
+    font-size: 30px;
+}
+
+
+#start-quiz {
     box-sizing: border-box;
     text-align: center;
     margin: 10px auto 0 auto;
-    height: 500px;
+    height: 600px;
     width: 60%;
     background-image: url(../images/Yarzxl.png);
     background-position: center;
@@ -61,7 +76,7 @@ p {
     font-size: 25px;
 }
 
-div p span {
+.bat-button p span {
     color: rgb(2, 172, 2);
     -webkit-text-stroke: 1px rgb(2, 172, 2);
 }
@@ -71,7 +86,7 @@ div p span {
     justify-content: center;
 }
 
-button {
+.bat-button {
     background-image: url(../images/111.jpg);
     background-size: cover;
     background-position: center;
@@ -84,9 +99,10 @@ button {
     color: lightgreen;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     border: 2px solid green;
+    margin-top: 100px;
 }
 
-button:hover {
+.bat-button:hover {
     color: yellow;
     border: 2px solid gold;
     background-image: url(../images/791233.jpg);
@@ -115,6 +131,9 @@ button:hover {
 
   
 @media only screen and (min-width:414px) and (max-width:767px) {
+    header h1 {
+        font-size: 50px;
+    }
 
     div { 
         height: 650px;
