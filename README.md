@@ -12,6 +12,10 @@ You are Robin. The Riddler has captured you and is forcing you to take a timed q
 
 The quiz consists of 15 Batman related questions. A maximum of 15 points, with each corrected answer being equal to one point. If you don't beat the clock, the Riddler wins!
 
+2 minutes on the clock!
+30 seconds lost per missed question!
+Good luck Boy Wonder!
+
 
 Feel free to reach out to me at:
 tedmjablonowski@gmail.com
