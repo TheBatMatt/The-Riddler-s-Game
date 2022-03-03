@@ -87,7 +87,7 @@ var riddleMeThis = [
     //Q08
     {
         number: "Question 8",
-        question: "What is the name of the armoured suit designed by Batman and forged by the Justice League to use in battles beyond his strength level?",
+        question: "What is the armoured suit designed by Batman and forged by the Justice League?",
         options: ["A. Hellbat Armor", "B. Bat-Tech Armor", "C. Battle-Bat Armor", "D. Warbat Armor"],
         answer: "A Hellbat Armor"
     },
@@ -95,7 +95,7 @@ var riddleMeThis = [
     //Q09
     {
         number: "Question 9",
-        question: "How did Batman get sent back in time at the end of the 'Final Crisis' Event?",
+        question: "How did Batman get sent back in time at the end of the Final Crisis Event?",
         options: ["A. Lex Luthor's Lexorian Armor", "B. Darkseid's Omega Beams", "C. Joker Stole a Time Machine", "D. The Anti-Life Equation"],
         answer: "B. Darkseid's Omega Beams"
     },
@@ -103,7 +103,7 @@ var riddleMeThis = [
     //Q10 
     {
         number: "Question 10",
-        question: "Who took on the mantle of 'Batman' before the original was pulled back from the past?",
+        question: "Who took on the role of Batman before the original was pulled back from the past?",
         options: ["A. Nightwing", "B. Robin", "C. Red-Hood", "D. Batgirl"],
         answer: "A. Nightwing"
     },
@@ -111,15 +111,15 @@ var riddleMeThis = [
     //Q11
     {
         number: "Question 11",
-        question: "What is the name of the evil Batman, leader of the Dark Knights whom invaded Earth from the Dark Multiverse, who came from Earth -22?",
-        options: ["A. Dawnbreaker", "B. The Drowned", "C. Red Death", "D. Merciless", "E. Devestator", "F. Grim Knight", "G. The Machine", "H. The Batman Who Laughs"],
-        answer: "H. The Batman Who Laughs"
+        question: "What is the name of the evil Batman from Earth -22?",
+        options: ["A. Dawnbreaker", "B. Batman Who Laughs", "C. Red Death", "D. Merciless"],
+        answer: "B. The Batman Who Laughs"
     },
 
     //Q12
     {
         number: "Question 12",
-        question: "What infeced the Batman Who Laughs to make him a hybrid of both Batman and the Joker?",
+        question: "What infeced the Batman Who Laughs to make him like the Joker?",
         options: ["A. Joker-Formula", "B. Joker-Poison", "C. Joker-Toxin", "D. Joker-Infection"],
         answer: "B. Joker-Toxin"
     },
@@ -127,7 +127,7 @@ var riddleMeThis = [
     //Q13
     {
         number: "Question 13",
-        question: "Who did Batman team up with to stop the Batman Who Laugh's first reign of terror?",
+        question: "Who did Batman team up with to stop the Batman Who Laugh's?",
         options: ["A. Superman", "B. Wonder Woman", "C. Robin", "D. Joker"],
         answer: "D. Joker"
     },
@@ -135,7 +135,7 @@ var riddleMeThis = [
     //Q14
     {
         number: "Question 14",
-        question: "What did the Batman Who Laughs call himself after becoming God of the Multiverse?",
+        question: "What did the Batman Who Laughs call himself after becoming a god?",
         options: ["A. The God Bat", "B. The Darkest Knight", "C. The Dark God", "D. The Bat"],
         answer: "B. The Darkest Knight"
     },
@@ -143,7 +143,7 @@ var riddleMeThis = [
     //Q15
     {
         number: "Question 15",
-        question: "Finally, who destroyed the Darkest Knight aka the Batman Who Laughs by throwing him into the sun at the end of time itself?",
+        question: "Who beat the Darkest Knight by throwing him into the sun at the end of time?",
         options: ["A. Superman", "B. Batman", "C. Wonder Woman", "D. The Entire Justice Leage"],
         answer: "C. Wonder Woman"
     }
@@ -171,7 +171,7 @@ function checkAnswers() {
     if (selectedAnswer.value === riddleMeThis[quizIndex-1].answer) {
         correctAnswers++
     } else {
-        timer -= 30;
+        timer -= 10;
     }
 
     console.log(correctAnswers);
@@ -233,7 +233,9 @@ function showResults() {
 
     resultsButton.addEventListener("click", function(){
         var name = nameBox.value;
-        localStorage.setItem("score", { name:name, correctAnswers:correctAnswers });
+        localStorage.setItem(name, JSON.stringify(name));
+        localStorage.setItem(score, parseInt(score));
+        return startRiddlerGame();
     });
 }
 
@@ -269,7 +271,7 @@ function renderQuizQuestion(i) {
             quizAnswers.checked = true;
         }   
 
-        submitButton.style["margin-top"] = "120px";
+        submitButton.style["margin-top"] = "150px";
 
         quizOptions.appendChild(quizAnswers);
         quizOptions.appendChild(radioLabel);
