@@ -96,7 +96,7 @@ var riddleMeThis = [
     {
         number: "Question 9",
         question: "How did Batman get sent back in time at the end of the Final Crisis Event?",
-        options: ["A. Lex Luthor's Lexorian Armor", "B. Darkseid's Omega Beams", "C. Joker Stole a Time Machine", "D. The Anti-Life Equation"],
+        options: ["A. Lex Luthor's Lexorian Armor", "B. Darkseid's Omega Beams", "C. The Flash's Speedforce", "D. The Anti-Life Equation"],
         answer: "B. Darkseid's Omega Beams"
     },
 
@@ -233,9 +233,9 @@ function showResults() {
 
     resultsButton.addEventListener("click", function(){
         var name = nameBox.value;
-        localStorage.setItem(name, JSON.stringify(name));
-        localStorage.setItem(score, parseInt(score));
-        return startRiddlerGame();
+        localStorage.setItem("Winner", name);
+        localStorage.setItem("Score", correctAnswers);
+        return;
     });
 }
 
