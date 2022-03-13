@@ -20,7 +20,7 @@ Good luck Boy Wonder!
 Feel free to reach out to me at:
 tedmjablonowski@gmail.com
 
-https://tedmjablonowski.github.io/Friendly-Parakeet-Password-Generator/
+https://tedmjablonowski.github.io/The-Riddler-s-Game/
 
 ![screenshot](https://github.com/tedmjablonowski/The-Riddler-s-Game/blob/main/assets/images/bat-quiz.jpg)
 
